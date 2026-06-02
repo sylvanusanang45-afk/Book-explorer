@@ -111,6 +111,10 @@ toggbtn.addEventListener("click",() => {
 
 let title=document.createElement("h3")
 title.innerText=favourite.title
+if(favourite.important){
+title.innerText =
+"⭐ " + favourite.title;
+}
 
 let published=document.createElement("p")
 published.innerText=`Date published: ${favourite.first_publish_year}`
